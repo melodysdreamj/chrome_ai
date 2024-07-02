@@ -1,5 +1,5 @@
 [![pub package](https://img.shields.io/pub/v/NewLego.svg)](https://pub.dartlang.org/packages/NewLego)
-[![GitHub](https://img.shields.io/github/stars/melodysdreamj/june.svg?style=social&label=Star)](https://github.com/melodysdreamj/june)
+[![GitHub](https://img.shields.io/github/stars/melodysdreamj/chrome_ai.svg?style=social&label=Star)](https://github.com/melodysdreamj/chrome_ai)
 
 # ChromeAI
 Recently, Chrome has added window.ai — a Gemini Nano AI model right inside your browser.
