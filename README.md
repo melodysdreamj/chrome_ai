@@ -65,7 +65,7 @@ print(result);
 import 'package:chrome_ai/chrome_ai.dart';
 
 final session = await ChromeAI.createTextSession();
-final stream = session.promptStreaming(_controller.text);
+final stream = session.promptStreaming("why is the sky blue?");
 
 stream.listen((result) {
   print(result);
