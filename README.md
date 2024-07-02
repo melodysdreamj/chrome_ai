@@ -12,6 +12,7 @@ Accordingly, we have developed a library to enable this feature in Flutter. With
 
 
 ## Installation
+you can watch this [video](https://www.youtube.com/watch?v=IUhVGdGxYcQ) to see how to enable AI in Chrome and run this plugin.
 
 ### 1. Enable AI in Chrome
 
