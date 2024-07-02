@@ -31,7 +31,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final TextEditingController _controller = TextEditingController(text: "why sky is blue?");
+  final TextEditingController _controller =
+      TextEditingController(text: "why sky is blue?");
   String _displayText = "This space is filled with text.";
   String? _error;
 
@@ -60,11 +61,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 ElevatedButton(
                   onPressed: () async {
                     final availability = await ChromeAI.canCreateTextSession();
-                    if(availability == AIModelAvailability.no){
+                    if (availability == AIModelAvailability.no) {
                       // can not create text session
-                    }else if(availability == AIModelAvailability.afterDownload) {
+                    } else if (availability ==
+                        AIModelAvailability.afterDownload) {
                       // need to download model
-                    }else if(availability == AIModelAvailability.readily){
+                    } else if (availability == AIModelAvailability.readily) {
                       // model is ready
                     }
                     setState(() {
@@ -75,9 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 const SizedBox(width: 10),
                 ElevatedButton(
-                  onPressed: () async  {
-
-
+                  onPressed: () async {
                     final session = await ChromeAI.createTextSession();
                     var result = await session.prompt(_controller.text);
 
@@ -90,7 +90,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 const SizedBox(width: 10),
                 ElevatedButton(
                   onPressed: () async {
-
                     final session = await ChromeAI.createTextSession();
                     final stream = session.promptStreaming(_controller.text);
 

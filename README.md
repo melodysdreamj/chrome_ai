@@ -2,17 +2,15 @@
 [![GitHub](https://img.shields.io/github/stars/melodysdreamj/chrome_ai.svg?style=social&label=Star)](https://github.com/melodysdreamj/chrome_ai)
 
 # ChromeAI
-Recently, Chrome has added window.ai — a Gemini Nano AI model right inside your browser.
+Recently, Chrome has added window.ai — a Gemini Nano AI model right inside your browser.  This means that web developers can instantly and unlimitedly use on-device AI without any configuration. 
 
-I believe this will truly transform web applications. This means that web developers can instantly and unlimitedly use on-device AI without any configuration.
+I believe this will truly transform web applications. The use-cases are endless: smart auto-completion, error correction and validation, natural language filtering, auto-filling forms, UI suggestions, first-pass summarization, and search.
 
-The use-cases are endless: smart auto-completion, error correction and validation, natural language filtering, auto-filling forms, UI suggestions, first-pass summarization, and search.
-
-Accordingly, we have developed a library to enable this feature in Flutter. With this library, you can easily utilize the feature in Flutter web as well.
+Accordingly, I have developed a library to enable this feature in Flutter. With this library, you can easily utilize the feature in Flutter web as well.
 
 
 ## Installation
-you can watch this [video](https://www.youtube.com/watch?v=IUhVGdGxYcQ) to see how to enable AI in Chrome and run this plugin.
+you can watch this [video](https://www.youtube.com/watch?v=IUhVGdGxYcQ) to see how to enable AI in Chrome and run this library.
 
 ### 1. Enable AI in Chrome
 
@@ -23,7 +21,7 @@ After then, you should turn on these flags:
 * [chrome://flags/#optimization-guide-on-device-model](chrome://flags/#optimization-guide-on-device-model): `Enabled BypassPrefRequirement`
 * [chrome://components/](chrome://components/): Click `Optimization Guide On Device Model` to download the model.
 
-### 2. Add plugin
+### 2. Add library
 ```bash
 flutter pub add chrome_ai
 ```

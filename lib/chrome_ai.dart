@@ -86,7 +86,7 @@ enum AIModelAvailability { readily, afterDownload, no }
 class ChromeAI {
   static Future<AIModelAvailability> canCreateTextSession() async {
     try {
-    _checkAIAvailability();
+      _checkAIAvailability();
 
       final promise = jsAI!.canCreateTextSession();
       final result = await promiseToFuture(promise);
@@ -116,16 +116,16 @@ class ChromeAI {
     try {
       final jsOptions = options != null
           ? JsAITextSessionOptions(
-        topK: options.topK,
-        temperature: options.temperature,
-        systemPrompt: options.systemPrompt,
-        initialPrompts: options.initialPrompts
-            ?.map((p) => JsAIPrompt(
-          role: p.role.toString().split('.').last,
-          content: p.content,
-        ))
-            .toList(),
-      )
+              topK: options.topK,
+              temperature: options.temperature,
+              systemPrompt: options.systemPrompt,
+              initialPrompts: options.initialPrompts
+                  ?.map((p) => JsAIPrompt(
+                        role: p.role.toString().split('.').last,
+                        content: p.content,
+                      ))
+                  .toList(),
+            )
           : null;
       final promise = jsAI!.createTextSession(jsOptions);
       final result = await promiseToFuture(promise);
@@ -183,7 +183,6 @@ class AITextSession {
     }
   }
 
-
   int get topK => _jsObject.topK;
 
   double get temperature => _jsObject.temperature;
@@ -212,7 +211,7 @@ class AITextSession {
         final value = getProperty(result, 'value');
 //         print('Stream read result - done: $done, value: $value'); // 로그 추가
         if (!done) {
-          if(value is String) {
+          if (value is String) {
             controller.add(value);
           }
           read();
