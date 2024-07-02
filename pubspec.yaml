@@ -1,6 +1,6 @@
 name: chrome_ai
-description: "support for chrome ai in flutter. This package is a wrapper for the chrome ai api. It provides a simple way to use the chrome ai api in flutter."
-version: 0.0.7
+description: "Support for chrome AI in Flutter. This package is a wrapper for the Chrome AI API. It provides a simple way to use the Chrome AI API in Flutter."
+version: 0.0.8
 homepage: https://github.com/melodysdreamj/chrome_ai
 
 environment:
@@ -18,3 +18,6 @@ dev_dependencies:
   flutter_lints: ^3.0.0
 
 flutter:
+  platforms:
+    web:
+      default_package: true
