@@ -174,11 +174,11 @@ class AITextSession {
   Stream<String> promptStreaming(String input) {
     try {
       final stream = _jsObject.promptStreaming(input);
-      print('Starting promptStreaming for input: $input'); // 로그 추가
+//       print('Starting promptStreaming for input: $input'); // 로그 추가
       return _convertReadableStreamToDartStream(stream);
       // return null;
     } catch (e) {
-      print('Error starting promptStreaming: $e');
+//       print('Error starting promptStreaming: $e');
       throw Exception('Failed to prompt streaming: $e');
     }
   }
@@ -210,7 +210,7 @@ class AITextSession {
       promiseToFuture(reader.read()).then((result) {
         final done = getProperty(result, 'done');
         final value = getProperty(result, 'value');
-        print('Stream read result - done: $done, value: $value'); // 로그 추가
+//         print('Stream read result - done: $done, value: $value'); // 로그 추가
         if (!done) {
           if(value is String) {
             controller.add(value);
@@ -222,7 +222,7 @@ class AITextSession {
           }
         }
       }).catchError((error) {
-        print('Error occurred while reading stream: $error'); // 에러 로그 추가
+//         print('Error occurred while reading stream: $error'); // 에러 로그 추가
         if (!controller.isClosed) {
           controller.addError('Error occurred: $error');
           controller.close();
