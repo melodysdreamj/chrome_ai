@@ -1,4 +1,4 @@
-[![pub package](https://img.shields.io/pub/v/NewLego.svg)](https://pub.dartlang.org/packages/NewLego)
+[![pub package](https://img.shields.io/pub/v/chrome_ai.svg)](https://pub.dartlang.org/packages/chrome_ai)
 [![GitHub](https://img.shields.io/github/stars/melodysdreamj/chrome_ai.svg?style=social&label=Star)](https://github.com/melodysdreamj/chrome_ai)
 
 # ChromeAI
