@@ -4,7 +4,7 @@
 # ChromeAI
 Recently, Chrome has added window.ai — a Gemini Nano AI model right inside your browser.
 
-I believe this will truly transform web applications.
+I believe this will truly transform web applications. This means that web developers can instantly and unlimitedly use on-device AI without any configuration.
 
 The use-cases are endless: smart auto-completion, error correction and validation, natural language filtering, auto-filling forms, UI suggestions, first-pass summarization, and search.
 
