@@ -28,12 +28,12 @@ After then, you should turn on these flags:
 flutter pub add chrome_ai
 ```
 
-### 3. run your project
-#### 1. Run Server
+### 3. Run your project
+##### 1. Open terminal and run web-server
 ```bash
 flutter run -d web-server
 ```
-#### 2. Open Chrome [dev](https://www.google.com/chrome/dev/?extra=devchannel) or [canary](https://www.google.com/chrome/canary/), and open your project in `http://localhost:port`
+##### 2. Open Chrome [dev](https://www.google.com/chrome/dev/?extra=devchannel) or [canary](https://www.google.com/chrome/canary/), and open your project in `http://localhost:port`
 
 
 ## Usage
